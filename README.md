@@ -1,4 +1,5 @@
 ## Organization logic
+
 ```bash
 inspecta-pro-modeling/
 │
