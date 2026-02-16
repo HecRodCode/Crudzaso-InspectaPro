@@ -1,41 +1,43 @@
-# Website
+# InspectaPro – Documentation Docusaurus
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This directory contains the **Docusaurus** engine used to render the InspectaPro technical documentation into an interactive web portal.
 
-## Installation
+## 🛠 Prerequisites
 
-```bash
-yarn
-```
+Before running the portal, ensure you have `Node.js` installed and that you are inside the `website/` directory.
 
-## Local Development
+## 🚀 Setup & Local Development
 
-```bash
-yarn start
-```
+1. **Install Dependencies:**
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+Since we are using `Mermaid` for diagrams, you must install the specific themes:
 
 ```bash
-yarn build
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+2. Start the Development Server:
 
 ```bash
-USE_SSH=true yarn deploy
+npm start
 ```
 
-Not using SSH:
+- The portal will be available at http://localhost:3000.
+
+## 📂 Content Management
+
+The content of this portal is mirrored from the root docs/ and diagrams/ folders:
+
+- Markdown Files: Located in `./docs/` These are the English source files for all modeling explanations.
+- Static Assets: Located in `./static/img/` All system diagrams must be placed here to be rendered correctly.
+- Navigation: Managed via `sidebars.js` to ensure a logical flow from Business Case to Architecture Justification.
+
+## 🏗 Build
+
+To generate the final static files for production (e.g., for GitHub Pages):
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run build
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The output will be generated in the `./build/` directory.
