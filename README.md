@@ -81,9 +81,6 @@ The project is organized following a logical flow from business requirements to 
 ### 🖼️ Visual Assets (`/diagrams`)
 
 - `use-case-diagram.png`: Actor interactions.
-- `process-flow-diagram.png`: System state machine and data flow.
-- `erd-diagram.png`: Entity-Relationship Diagram (SQL).
-- `document-model-diagram.png`: Visual representation of the NoSQL JSON structure.
 
 ---
 
@@ -98,7 +95,7 @@ The project is organized following a logical flow from business requirements to 
 
 ## 🛠️ Tools Used
 
-- **Modeling:** Mermaid.js, Lucidchart.
+- **Modeling:** Mermaid.js.
 - **Documentation:** Markdown & Docusaurus.
 - **Version Control:** GitHub.
 
